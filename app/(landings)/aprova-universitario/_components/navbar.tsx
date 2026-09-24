@@ -2,7 +2,8 @@ import { Pic } from "../_lib/picture";
 import { conteudo, CHECKOUT_HREF, LOGIN_HREF, SITE_HREF, IMG } from "../_content";
 
 /**
- * Barra branca com logo, "Sou aluno" e "Assinar". No celular vira um
+ * Barra branca com logo, "Sou aluno" (link discreto) e "Assine agora" (botão
+ * amarelo, o mesmo CTA primário do resto da página). No celular vira um
  * <details> com o botão hambúrguer: abre o menu amarelo sem JS.
  */
 export function Navbar() {
@@ -10,7 +11,7 @@ export function Navbar() {
   const menu = (
     <div className="au-nav__menu">
       <a className="au-btn au-btn--fantasma" href={LOGIN_HREF}>{c.aluno}</a>
-      <a className="au-btn au-btn--azul" href={CHECKOUT_HREF}>{c.assinar}</a>
+      <a className="au-btn" href={CHECKOUT_HREF}>{c.assinar}</a>
     </div>
   );
   return (

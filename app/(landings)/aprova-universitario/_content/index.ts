@@ -49,12 +49,12 @@ export const PRECO = {
 } as const;
 
 export const conteudo = {
-  nav: { logoAlt: "Aprova Universitário", aluno: "Sou aluno", assinar: "Assinar", menu: "Abrir menu" },
+  nav: { logoAlt: "Aprova Universitário", aluno: "Sou aluno", assinar: "Assine agora", menu: "Abrir menu" },
 
   hero: {
     h1: "Você não precisa surtar no ciclo inicial da área da saúde",
     p: "Anatomia, Bioquímica, Fisiologia e mais 8 disciplinas explicadas com aulas curtas e visuais, pra quem precisa entender rápido e mandar bem nas provas",
-    cta: "Assine agora",
+    cta: "Assine agora por R$ 79,00/mês",
     nota: "Milhares de estudantes já estudam pelo único curso do Brasil feito pro ciclo básico de Biológicas",
     videoAlt: "Professora em um laboratório apresentando as aulas do Aprova Universitário",
   },

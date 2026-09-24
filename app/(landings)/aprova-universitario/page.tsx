@@ -28,7 +28,8 @@ const landing = getLanding("aprova-universitario");
  * do ciclo básico da saúde, R$ 79,00 por mês). Porte fiel do export Webflow.
  *
  * Server Components por padrão; a única ilha cliente é o formulário de
- * planos de ensino. Menu mobile e FAQ em <details> nativo; cards de
+ * planos de ensino, que fica depois do FAQ para não interromper o fluxo
+ * de venda (checklist de CTAs). Menu mobile e FAQ em <details> nativo; cards de
  * disciplina revelam a descrição por hover/foco em CSS.
  */
 export default function AprovaUniversitarioPage() {
@@ -67,8 +68,8 @@ export default function AprovaUniversitarioPage() {
         <Jubilut />
         <Depoimentos />
         <BannerCta />
-        <PlanosEnsino />
         <Faq />
+        <PlanosEnsino />
       </main>
       <Rodape />
     </div>
