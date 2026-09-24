@@ -13,7 +13,7 @@ export type Landing = {
 export const landings = {
   "aprova-universitario": {
     slug: "aprova-universitario",
-    title: "Aprova Universitário: Anatomia, Bioquímica e Fisiologia",
+    title: "Anatomia, Bioquímica e Fisiologia para o Ciclo Básico",
     description: "11 disciplinas do ciclo básico da saúde em aulas curtas e visuais, com mapas mentais, quizzes e mais de 2.100 questões. R$ 79,00 por mês, 7 dias de garantia.",
     path: "/aprova-universitario",
     enabled: true,
