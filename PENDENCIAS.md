@@ -12,6 +12,14 @@ Lista viva do que não dá para resolver só no código. Atualizada em 24/09/202
 | 4 | Confirmar `oferta` e `productCode` do checkout atual (`CHECKOUT_HREF`) | `_content/index.ts` |
 | 5 | Confirmar se "de R$ 699" é o preço de referência correto para a âncora de/por | `PRECO.de` em `_content/index.ts` |
 
+## Conteúdo e SEO
+
+| # | O quê |
+|---|---|
+| 13 | **Ementa real por disciplina**: as páginas dedicadas (`/aprova-universitario/<disciplina>/`) e o guia da página principal descrevem o que cada disciplina cobre em geral. Para falar do curso em si (carga horária, módulos, número de aulas por disciplina), preciso dos planos de ensino. Entra em `_content/disciplinas-guia.ts` |
+| 14 | **Blog com conteúdo de cauda longa**: não cabe neste repositório de LP. Precisa de decisão de plataforma (Next neste repo, WordPress, outro), de quem escreve e da pauta inicial. Posso montar a estrutura quando decidirem |
+| 15 | **Depoimentos por disciplina**: as páginas dedicadas hoje não têm prova social própria. Se houver depoimentos ou resultados por matéria, entram lá |
+
 ## Formulário (ActiveCampaign)
 
 | # | O quê |

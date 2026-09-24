@@ -326,3 +326,47 @@
 
 /* O design não tem botão flutuante de WhatsApp: o global some só aqui. */
 body:has(.au) .whatsapp-float { display: none; }
+
+/* Guia do ciclo básico (página principal) --------------------------------- */
+.au-guia__col { width: 100%; max-width: 940px; display: flex; flex-direction: column; gap: 20px; }
+.au-guia h2 { text-align: center; font-size: 40px; margin-bottom: 8px; }
+.au-guia__intro { font: 400 16px / 1.6 var(--corpo); color: var(--branco); }
+.au-guia__lista { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+.au-guia__item { border-radius: 16px; background: var(--cinza-escuro); padding: 20px 24px; }
+.au-guia__item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.au-guia__item summary::-webkit-details-marker { display: none; }
+.au-guia__item summary:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 6px; border-radius: 8px; }
+.au-guia__item h3 { font: 700 20px / 1.3 var(--display); color: var(--branco); }
+.au-guia__seta { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--amarelo); color: #0f1213; display: flex; align-items: center; justify-content: center; font: 700 20px / 1 var(--display); transition: transform .25s; }
+.au-guia__item[open] .au-guia__seta { transform: rotate(45deg); }
+.au-guia__corpo { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; font: 300 16px / 1.6 var(--corpo); color: var(--branco); }
+.au-guia__sub { font: 700 16px / 1.4 var(--display); }
+.au-guia__corpo ul { list-style: disc; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
+.au-guia__link { align-self: flex-start; font: 600 15px / 1.4 var(--display); color: var(--amarelo); text-decoration: none; }
+.au-guia__link:hover { text-decoration: underline; }
+@media (max-width: 767px) { .au-guia h2 { font-size: 30px; } .au-guia__item { padding: 16px; } .au-guia__item h3 { font-size: 18px; } }
+@media (prefers-reduced-motion: reduce) { .au-guia__seta { transition: none; } }
+
+/* Páginas por disciplina --------------------------------------------------- */
+.au-dhero { padding: 60px 10px; display: flex; justify-content: center; background: var(--preto); }
+.au-dhero > * { min-width: 0; }
+.au-dhero { gap: 40px; align-items: center; width: 100%; }
+.au-dhero__col { flex: 1 1 560px; max-width: 700px; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.au-dhero__pill { padding: 6px 14px; border-radius: 20px; background: rgba(255, 255, 0, .1); box-shadow: inset 0 0 0 1px rgba(255, 255, 0, .4); font: 600 13px / 1.3 var(--display); color: var(--amarelo); }
+.au-dhero h1 { font: 700 44px / 1.15 var(--display); color: var(--branco); }
+.au-dhero__p { font: 400 18px / 1.6 var(--corpo); color: var(--branco); }
+.au-dhero__nota { font: italic 400 14px / 1.6 var(--corpo); color: var(--texto-claro); }
+.au-dhero__img { flex: 0 1 420px; max-width: 420px; border-radius: 24px; overflow: hidden; }
+.au-dhero__img img { width: 100%; height: auto; }
+.au-dsec { padding: 60px 10px; }
+.au-dsec--cinza { background: #0a0a0a; }
+.au-dsec__col { width: 100%; max-width: 940px; display: flex; flex-direction: column; gap: 18px; }
+.au-dsec h2 { font-size: 34px; }
+.au-dsec h2 + h2, .au-dsec p + h2 { margin-top: 24px; }
+.au-dsec h3 { font: 700 20px / 1.3 var(--display); color: var(--branco); margin-top: 8px; }
+.au-dsec p { font: 300 16px / 1.6 var(--corpo); color: var(--branco); }
+.au-dlinks { display: flex; flex-wrap: wrap; gap: 10px; }
+.au-dlinks a { display: inline-block; padding: 8px 14px; border-radius: 20px; background: var(--cinza-escuro); color: var(--branco); font: 600 14px / 1.3 var(--display); text-decoration: none; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12); }
+.au-dlinks a:hover { background: var(--amarelo); color: #0f1213; }
+@media (max-width: 991px) { .au-dhero { flex-direction: column-reverse; text-align: center; } .au-dhero__col { align-items: center; } .au-dhero h1 { font-size: 34px; } .au-dhero__img { max-width: 320px; } }
+@media (max-width: 767px) { .au-dsec h2 { font-size: 28px; } .au-dhero h1 { font-size: 28px; } .au-dhero .au-btn { width: 100%; } }

@@ -27,7 +27,9 @@ O site estático sai em `out/`. `NEXT_PUBLIC_PATH` define a URL pública: o path
 | Caminho | O que é |
 |---|---|
 | `app/(landings)/aprova-universitario/_content/index.ts` | todo o texto da página e as constantes: checkout, login, endpoint e campos do formulário |
-| `app/(landings)/aprova-universitario/_components/` | uma seção por arquivo (hero, disciplinas, comparativo, formulário, FAQ...) |
+| `app/(landings)/aprova-universitario/_components/` | uma seção por arquivo (hero, disciplinas, comparativo, formulário, FAQ, guia...) |
+| `app/(landings)/aprova-universitario/_content/disciplinas-guia.ts` | conteúdo do guia do ciclo básico e das 11 páginas por disciplina |
+| `app/(landings)/aprova-universitario/[disciplina]/` | página dedicada de cada disciplina (`/aprova-universitario/anatomia/` etc.) |
 | `app/(landings)/aprova-universitario/aprova-universitario.css` | o estilo da página |
 | `public/images/aprova-universitario/` | imagens em AVIF e WebP |
 | `public/videos/aprova-universitario/` | vídeo do hero |
@@ -39,6 +41,8 @@ O site estático sai em `out/`. `NEXT_PUBLIC_PATH` define a URL pública: o path
 Envia para o ActiveCampaign (form 281) por JSONP, igual ao embed original, e dispara `generate_lead` no `dataLayer`. Constantes em `_content/index.ts`.
 
 ## Pendências
+
+Lista completa e atualizada em `PENDENCIAS.md`.
 
 - Domínio de publicação: as URLs seguem `aprovatotal.com.br/lp/aprova-universitario/`. Para publicar em `aprovauniversitario.com.br`, ajustar `config/site.ts` e `NEXT_PUBLIC_PATH`.
 - Confirmar `oferta` e `productCode` do checkout em `_content/index.ts`.

@@ -17,6 +17,7 @@ import { Depoimentos } from "./_components/depoimentos";
 import { BannerCta } from "./_components/banner-cta";
 import { PlanosEnsino } from "./_components/planos-ensino";
 import { Faq } from "./_components/faq";
+import { GuiaDisciplinas } from "./_components/guia-disciplinas";
 import { Rodape } from "./_components/rodape";
 import "./aprova-universitario.css";
 
@@ -71,6 +72,7 @@ export default function AprovaUniversitarioPage() {
         <Depoimentos />
         <BannerCta />
         <Faq />
+        <GuiaDisciplinas />
         <PlanosEnsino />
       </main>
       <Rodape />
