@@ -12,7 +12,7 @@ export function Depoimentos() {
             <li key={d.foto} className="au-dep__card">
               <blockquote>{d.texto}</blockquote>
               <div className="au-dep__autor">
-                <Pic src={`${IMG}/${d.foto}`} alt="" width={60} height={60} />
+                <Pic src={`${IMG}/${d.foto}`} alt={d.fotoAlt} width={60} height={60} />
                 <div>
                   <span className="au-dep__nome">{d.nome}</span>
                   <strong className="au-dep__curso">{d.curso}</strong>

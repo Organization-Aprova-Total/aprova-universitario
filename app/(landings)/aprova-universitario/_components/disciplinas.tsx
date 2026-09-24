@@ -15,7 +15,7 @@ export function Disciplinas() {
         {c.itens.map((d) => (
           <li key={d.foto} className="au-disc__item" tabIndex={0}>
             <div className="au-disc__frente">
-              <Pic src={`${IMG}/${d.foto}`} alt="" width={600} height={600} />
+              <Pic src={`${IMG}/${d.foto}`} alt={d.alt} width={600} height={600} />
               <h3>{d.nome}</h3>
             </div>
             <div className="au-disc__desc">
