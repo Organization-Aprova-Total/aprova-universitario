@@ -160,7 +160,7 @@
 
 /* Disciplinas (cards com descrição que sobe) ---------------------------- */
 .au-disc h2 { margin-bottom: 24px; text-align: center; }
-.au-disc__grid { display: grid; grid-template-columns: repeat(4, 290px); justify-content: center; gap: 20px; }
+.au-disc__grid { width: 100%; max-width: 1220px; display: grid; grid-template-columns: repeat(auto-fit, 290px); justify-content: center; gap: 20px; }
 .au-disc__item { position: relative; width: 290px; min-height: 100%; border-radius: 12px; overflow: hidden; background: var(--cinza-escuro); display: flex; justify-content: center; align-items: center; outline: none; }
 .au-disc__frente { width: 100%; display: flex; flex-direction: column; align-items: center; }
 .au-disc__frente picture { width: 100%; }
@@ -171,7 +171,6 @@
 .au-disc__item:hover .au-disc__desc, .au-disc__item:focus-visible .au-disc__desc, .au-disc__item:focus-within .au-disc__desc { transform: translateY(0); }
 .au-disc__item:focus-visible { box-shadow: 0 0 0 3px var(--amarelo); }
 @media (prefers-reduced-motion: reduce) { .au-disc__desc { transition: none; } }
-@media (max-width: 991px) { .au-disc__grid { grid-template-columns: repeat(2, 290px); } }
 @media (max-width: 767px) { .au-disc__grid { grid-template-columns: minmax(175px, 290px); gap: 24px; } .au-disc__item { width: 100%; } .au-disc__frente img { width: 100%; height: 128px; } .au-disc__item h3 { margin: 12px 0; } }
 @media (max-width: 479px) { .au-disc__item h3 { font-size: 20px; } }
 
@@ -181,7 +180,7 @@
 .au-comp__topo h2 { width: 100%; margin-bottom: 24px; }
 .au-comp__tabela-wrap { width: 100%; max-width: 940px; margin-top: 40px; }
 .au-comp__dica { display: none; margin-bottom: 14px; text-align: center; font: 500 13px / 1.4 var(--corpo); color: #999; letter-spacing: .3px; }
-.au-comp__scroll { position: relative; width: 100%; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; border-radius: 20px; background: #0a0a0a; border: 1px solid #1f1f1f; }
+.au-comp__scroll { position: relative; width: 100%; overflow-x: auto; overscroll-behavior-x: contain; overflow-y: hidden; -webkit-overflow-scrolling: touch; border-radius: 20px; background: #0a0a0a; border: 1px solid #1f1f1f; }
 .au-comp__scroll::-webkit-scrollbar { height: 8px; }
 .au-comp__scroll::-webkit-scrollbar-track { background: #0a0a0a; }
 .au-comp__scroll::-webkit-scrollbar-thumb { background: var(--amarelo); border-radius: 4px; }
@@ -206,6 +205,18 @@
 .au-tabela__unidade { font-size: 12px; font-weight: 600; opacity: .85; }
 .au-tabela__nota { display: inline-block; margin-top: 4px; font-size: 10px; font-weight: 500; color: #888; text-transform: uppercase; letter-spacing: .5px; }
 @media (max-width: 991px) { .au-comp__dica { display: block; } .au-comp__tabela-wrap { width: 90%; } }
+@media (max-width: 767px) {
+  .au-tabela { width: 640px; min-width: 640px; }
+  .au-tabela th:nth-child(1), .au-tabela td:nth-child(1) { width: 150px; padding-left: 14px; font-size: 13px; }
+  .au-tabela th:nth-child(2), .au-tabela td:nth-child(2) { width: 130px; }
+  .au-tabela th:nth-child(3), .au-tabela td:nth-child(3) { width: 130px; }
+  .au-tabela th:nth-child(4), .au-tabela td:nth-child(4) { width: 115px; }
+  .au-tabela th:nth-child(5), .au-tabela td:nth-child(5) { width: 115px; }
+  .au-tabela th, .au-tabela td { padding: 14px 8px; height: 64px; font-size: 13px; }
+  .au-tabela__preco td.au-tabela__destaque { font-size: 14px; }
+  .au-comp__scroll { scroll-snap-type: x proximity; }
+  .au-comp__scroll::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 28px; background: linear-gradient(90deg, rgba(10, 10, 10, 0), #0a0a0a); pointer-events: none; }
+}
 @media (max-width: 767px) { .au-comp__topo { width: 90%; } .au-comp__topo h2 { width: 70%; } }
 @media (max-width: 479px) { .au-comp__topo { max-width: 93%; } .au-comp__topo h2 { width: 100%; } }
 
@@ -311,7 +322,8 @@
 .au-faq__ajuda a { overflow-wrap: anywhere; font: 700 18px / 1.1 var(--display); color: var(--azul); text-decoration: none; transition: opacity .25s; }
 .au-faq__ajuda a:hover { opacity: .7; }
 @media (max-width: 991px) { .au-faq h2 { margin-bottom: 12px; } }
-@media (max-width: 767px) { .au-faq h2 { text-align: center; } .au-faq__item h3 { font-size: 18px; } .au-faq__ajuda span { font-size: 20px; } }
+@media (max-width: 767px) { .au-faq h2 { text-align: center; } .au-faq__item h3 { font-size: 18px; } .au-faq__ajuda span { font-size: 20px; } .au-faq__ajuda a { font-size: 15px; overflow-wrap: normal; word-break: normal; } }
+@media (max-width: 359px) { .au-faq__ajuda a { font-size: 13px; } }
 @media (prefers-reduced-motion: reduce) { .au-faq__seta { transition: none; } }
 
 /* Rodapé ----------------------------------------------------------------- */
