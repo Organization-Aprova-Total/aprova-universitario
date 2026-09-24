@@ -3,6 +3,7 @@ import { breadcrumbJsonLd, faqJsonLd, organizationJsonLd } from "@/lib/seo";
 import { getLanding } from "@/config/landings";
 import { aprovaUniversitarioCourseJsonLd } from "./_lib/seo";
 import { CHECKOUT_HREF, IMG, faqTextoPuro } from "./_content";
+import { BarraOferta } from "./_components/barra-oferta";
 import { Navbar } from "./_components/navbar";
 import { Hero } from "./_components/hero";
 import { PraQuem } from "./_components/pra-quem";
@@ -56,6 +57,7 @@ export default function AprovaUniversitarioPage() {
       />
       <JsonLd id="ld-faq" data={faqJsonLd(faqTextoPuro)} />
 
+      <BarraOferta />
       <Navbar />
       <main>
         <Hero />

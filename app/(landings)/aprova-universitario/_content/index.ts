@@ -38,6 +38,14 @@ export const FORM_CAMPOS_OCULTOS = {
 export const FORM_CAMPOS_UTM = { utm_medium: "field[176]", utm_source: "field[190]", utm_content: "field[175]" } as const;
 export const CAMPANHA = "aprova-universitario";
 
+/**
+ * Banner de urgência (barra acima do hero, com contagem regressiva).
+ * Só aparece quando OFERTA_PRAZO tem uma data ISO válida no futuro, ex.:
+ * "2026-10-31T23:59:59-03:00". Texto e data vêm do time (PENDENCIAS.md).
+ */
+export const OFERTA_PRAZO = "";
+export const OFERTA_TEXTO = "Oferta por tempo limitado: R$ 79,00/mês termina em";
+
 export const IMG = "/images/aprova-universitario";
 export const VIDEO = "/videos/aprova-universitario";
 
@@ -167,8 +175,17 @@ export const conteudo = {
   },
 
   oferta: {
-    bonusTitulo: "Bônus exclusivos:",
-    bonus: ["Mapas mentais prontos para fixar o conteúdo", "Quizzes com feedback imediato em cada aula"],
+    inclusoTitulo: "Tudo que está incluso:",
+    incluso: [
+      "11 disciplinas do ciclo básico da área da saúde",
+      "Videoaulas curtas e objetivas, com produção visual cinematográfica",
+      "Mais de 2.100 questões separadas por disciplina",
+      "Mapas mentais prontos para fixar o conteúdo",
+      "Quizzes com feedback imediato em cada aula",
+      "Acompanhamento do seu progresso na seção Minhas métricas",
+    ],
+    garantiaTitulo: "7 dias de garantia",
+    garantiaTexto: "Não gostou, devolvemos 100% do valor. Sem burocracia",
     resumo: "11 matérias, mais de 2100 questões separadas por disciplina, mapas mentais, videoaulas curtas e objetivas e muito mais por apenas",
     de: "de R$",
     por: "por",

@@ -58,6 +58,11 @@
 .au-lista--branca { color: var(--branco); }
 @media (max-width: 479px) { .au-lista li { align-items: flex-start; } .au-lista__check { margin-top: 4px; } }
 
+/* Barra de urgência (só com OFERTA_PRAZO definido) ----------------------- */
+.au-urgencia { background: var(--amarelo); color: #0f1213; padding: 10px 16px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 14px; text-align: center; font: 600 14px / 1.3 var(--display); }
+.au-urgencia__tempo { display: inline-flex; gap: 6px; font-variant-numeric: tabular-nums; }
+.au-urgencia__tempo span { min-width: 2.6em; padding: 2px 6px; border-radius: 6px; background: #0f1213; color: var(--amarelo); font-weight: 700; }
+
 /* Navbar ----------------------------------------------------------------- */
 .au-nav { background: var(--branco); padding: 10px 15px; display: flex; justify-content: center; }
 .au-nav__caixa { width: 100%; max-width: 1310px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 24px; border-radius: 16px; background: var(--branco); }
@@ -201,7 +206,10 @@
 .au-oferta { width: 100%; max-width: 942px; margin-top: 20px; padding: 32px; border: 1.5px solid var(--amarelo); border-radius: 16px; background: rgba(255, 255, 0, .06); display: flex; flex-direction: column; align-items: center; }
 .au-oferta__titulo { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; font: 500 20px / 1 var(--display); color: var(--branco); }
 .au-oferta__titulo svg { width: 32px; height: 32px; color: var(--amarelo); }
-.au-oferta__bonus { display: flex; flex-direction: column; gap: 18px; margin-bottom: 10px; padding-left: 20px; font: 400 16px / 1.6 var(--corpo); color: var(--branco); align-self: stretch; }
+.au-oferta__bonus { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; margin-bottom: 10px; padding-left: 20px; font: 400 16px / 1.6 var(--corpo); color: var(--branco); align-self: stretch; }
+.au-oferta__bonus li { display: flex; gap: 6px; align-items: flex-start; }
+.au-oferta__garantia { display: flex; align-items: center; gap: 10px; margin-top: 20px; padding: 12px 18px; border-radius: 10px; background: rgba(255, 255, 0, .08); box-shadow: inset 0 0 0 1px rgba(255, 255, 0, .35); font: 400 14px / 1.5 var(--corpo); color: var(--branco); text-align: left; }
+.au-oferta__garantia strong { color: var(--amarelo); }
 .au-oferta__bonus li span { color: var(--amarelo); margin-right: 4px; }
 .au-oferta__linha { width: 100%; height: 1px; margin: 24px 0; background: var(--cinza-linha); }
 .au-oferta__resumo { width: 70%; text-align: center; font: italic 600 16px / 1.6 var(--corpo); color: var(--branco); }
@@ -210,7 +218,7 @@
 .au-oferta__valor { margin-bottom: 24px; font: 700 40px / .9 var(--display); color: var(--amarelo); text-align: center; }
 .au-oferta__valor span { font-size: 12px; color: var(--branco); }
 @media (max-width: 991px) { .au-oferta { width: 90%; } }
-@media (max-width: 767px) { .au-oferta { width: 93%; padding: 24px; } .au-oferta__resumo { width: 90%; } .au-oferta__valor { font-size: 32px; } }
+@media (max-width: 767px) { .au-oferta { width: 93%; padding: 24px; } .au-oferta__bonus { grid-template-columns: 1fr; } .au-oferta__resumo { width: 90%; } .au-oferta__valor { font-size: 32px; } }
 @media (max-width: 479px) { .au-oferta { padding: 16px 10px; } .au-oferta__bonus { padding-left: 0; align-self: center; } .au-oferta .au-btn { width: 100%; } }
 
 /* Jubilut ---------------------------------------------------------------- */

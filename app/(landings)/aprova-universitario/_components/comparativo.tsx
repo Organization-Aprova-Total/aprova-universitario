@@ -51,16 +51,19 @@ export function Comparativo() {
       </div>
 
       <div className="au-oferta">
-        <div className="au-oferta__titulo"><Icone nome="premio" /><span>{o.bonusTitulo}</span></div>
+        <div className="au-oferta__titulo"><Icone nome="premio" /><span>{o.inclusoTitulo}</span></div>
         <ul className="au-oferta__bonus">
-          {o.bonus.map((b) => <li key={b}><span aria-hidden="true">✓</span>{b}</li>)}
+          {o.incluso.map((b) => <li key={b}><span aria-hidden="true">✓</span>{b}</li>)}
         </ul>
         <div className="au-oferta__linha" aria-hidden="true" />
         <p className="au-oferta__resumo">{o.resumo}</p>
         <p className="au-oferta__de">{o.de} <s>{PRECO.de}</s> {o.por}</p>
         <p className="au-oferta__valor">{PRECO.valor} <span>{PRECO.periodo}</span></p>
         <a className="au-btn" href={CHECKOUT_HREF}>{o.cta}</a>
-        <span className="au-garantia">{PRECO.garantia}</span>
+        <p className="au-oferta__garantia">
+          <span aria-hidden="true">🛡</span>
+          <span><strong>{o.garantiaTitulo}.</strong> {o.garantiaTexto}</span>
+        </p>
       </div>
     </section>
   );
