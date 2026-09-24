@@ -20,6 +20,15 @@ Lista viva do que não dá para resolver só no código. Atualizada em 24/09/202
 | 14 | **Blog com conteúdo de cauda longa**: não cabe neste repositório de LP. Precisa de decisão de plataforma (Next neste repo, WordPress, outro), de quem escreve e da pauta inicial. Posso montar a estrutura quando decidirem |
 | 15 | **Depoimentos por disciplina**: as páginas dedicadas hoje não têm prova social própria. Se houver depoimentos ou resultados por matéria, entram lá |
 
+## Copy e prova social
+
+| # | O quê |
+|---|---|
+| 16 | **Foto ou vídeo real de aluno universitário usando a plataforma**: o hero usa o vídeo do Webflow (professora em laboratório) e o card "Depois" usa uma foto de banco. Preciso de material real (foto ou vídeo curto, com autorização de uso de imagem) para trocar |
+| 17 | **FAQ de avanço de venda**: as perguntas "Como faço pra assinar e começar?" e "Por onde eu começo?" usam só o que a página já afirma. Para completar, confirmar: formas de pagamento aceitas, se o acesso é imediato após o pagamento e como funciona o cancelamento fora dos 7 dias |
+| 18 | **Prova social numérica no hero**: usei os números que a página já trazia (6 milhões de alunos do Jubilut, 11 disciplinas, 2.100 questões, 7 dias). Se houver número próprio do Aprova Universitário (alunos ativos, aprovações em provas, nota média), ele é mais forte ali |
+| 19 | **Mais depoimentos de universitários**: os três atuais já são de estudantes de Medicina (UFSC, Unifamec, UFRN). Se houver depoimentos de outros cursos (Odonto, Enfermagem, Fisioterapia...), a seção fica mais representativa |
+
 ## Formulário (ActiveCampaign)
 
 | # | O quê |

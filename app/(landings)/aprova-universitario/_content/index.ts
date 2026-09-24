@@ -61,14 +61,21 @@ export const conteudo = {
 
   hero: {
     h1: "Você não precisa surtar no ciclo inicial da área da saúde",
-    p: "Anatomia, Bioquímica, Fisiologia e mais 8 disciplinas explicadas com aulas curtas e visuais, pra quem precisa entender rápido e mandar bem nas provas",
+    p: "As 11 disciplinas do ciclo básico da saúde, de Anatomia a Farmacologia, em aulas curtas e visuais, com mapas mentais, quizzes e mais de 2.100 questões, pra entender rápido e mandar bem nas provas",
     cta: "Assine agora por R$ 79,00/mês",
+    autoridade: "Criado por **Paulo Jubilut**, o maior professor de Biologia do Brasil: mais de 6 milhões de alunos impactados e a maior aula de Biologia do mundo, reconhecida pelo Guinness World Records.",
+    prova: [
+      { n: "+6 milhões", t: "de alunos impactados" },
+      { n: "11", t: "disciplinas do ciclo básico" },
+      { n: "+2.100", t: "questões por disciplina" },
+      { n: "7 dias", t: "de garantia" },
+    ],
     nota: "Milhares de estudantes já estudam pelo único curso do Brasil feito pro ciclo básico de Biológicas",
     videoAlt: "Professora em um laboratório apresentando as aulas do Aprova Universitário",
   },
 
   praQuem: {
-    h2: "Esse reforço foi criado para quem:",
+    h2: "Esse reforço foi feito pra quem:",
     itens: [
       "Está no início de Medicina, Odonto, Biomedicina, Enfermagem, Fisioterapia, Psicologia, Educação Física, Farmácia e Nutrição",
       "Sente que a faculdade não ensina, só joga conteúdo",
@@ -152,7 +159,7 @@ export const conteudo = {
   },
 
   comparativo: {
-    h2: "Entenda como o Aprova Universitário pode auxiliar na sua graduação",
+    h2: "Veja como o Aprova Universitário te ajuda na graduação",
     dica: "← Deslize pra comparar →",
     colunas: ["Aprova Universitário", "Monitoria particular", "Livro técnico", "Estudar sozinho"],
     linhas: [
@@ -271,8 +278,16 @@ export const conteudo = {
         a: "Sim! O Aprova Universitário foi criado especialmente para o ciclo inicial da área da saúde, com videoaulas no formato microlearning, quizzes e resumos visuais focados em **aprendizado real e retenção**. Nada de teoria solta ou excesso de complexidade, aqui você aprende o que realmente precisa saber para passar.",
       },
       {
+        q: "O que está incluso na assinatura?",
+        a: "As 11 disciplinas do ciclo básico (Anatomia, Bioquímica, Fisiologia, Histologia, Patologia, Microbiologia, Imunologia, Genética, Parasitologia, Farmacologia e Embriologia), com **videoaulas curtas, mapas mentais, quizzes em cada aula e mais de 2.100 questões** separadas por disciplina, além do acompanhamento do seu progresso na seção Minhas métricas. Tudo por R$ 79,00 por mês.",
+      },
+      {
         q: "Vale mais a pena que uma monitoria ou professor particular?",
         a: "A monitoria de Medicina custa mais de R$ 100/hora e você precisa encaixar na agenda de outra pessoa. Professor particular sai R$ 150-250/hora. Aqui você paga R$ 499 pelo ano inteiro, estuda quando quiser e tem acesso a **TODAS as disciplinas**.",
+      },
+      {
+        q: "Como faço pra assinar e começar?",
+        a: "Clica em **Assine agora**, finaliza a assinatura no checkout e entra na plataforma em app.aprovauniversitario.com.br com o seu login. Dá pra estudar pelo celular ou pelo computador, no seu ritmo.",
       },
       {
         q: "Como as aulas funcionam? Consigo usar mesmo com pouco tempo?",
@@ -281,6 +296,10 @@ export const conteudo = {
       {
         q: "Funciona para quem já está atrasado nas matérias ou em períodos avançados?",
         a: "Funciona ainda melhor! O conteúdo é focado nas disciplinas do ciclo inicial, mas é útil para estudantes de **todos os períodos,** especialmente para revisitar conceitos fundamentais ou reforçar a base teórica ao longo da graduação.",
+      },
+      {
+        q: "Por onde eu começo depois de assinar?",
+        a: "Pela disciplina que está pegando mais na sua faculdade. As matérias ficam em cards, divididas em módulos por assunto: abre a aula do tema da próxima prova, faz o quiz e usa o mapa mental pra revisar. Você também pode **favoritar conteúdos** pra voltar depois.",
       },
       {
         q: "Posso acompanhar meu progresso? Como funciona a plataforma?",

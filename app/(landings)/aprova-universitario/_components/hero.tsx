@@ -1,4 +1,5 @@
 import { withBasePath } from "@/lib/utils";
+import { Rich } from "../_lib/rich";
 import { conteudo, CHECKOUT_HREF, IMG, VIDEO } from "../_content";
 
 /**
@@ -30,6 +31,10 @@ export function Hero() {
         <h1>{c.h1}</h1>
         <p className="au-hero__p">{c.p}</p>
         <a className="au-btn" href={CHECKOUT_HREF}>{c.cta}</a>
+        <p className="au-hero__autoridade"><Rich text={c.autoridade} /></p>
+        <ul className="au-hero__prova" aria-label="Números do Aprova Universitário">
+          {c.prova.map((p) => <li key={p.n}><strong>{p.n}</strong><span>{p.t}</span></li>)}
+        </ul>
         <p className="au-hero__nota">{c.nota}</p>
       </div>
     </section>
