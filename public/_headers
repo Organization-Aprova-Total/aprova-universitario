@@ -1,0 +1,9 @@
+# Cache do edge (Cloudflare). Uma regra por LP.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
+# LPs (HTML: revalida no edge a cada 24h)
+/aprova-universitario/*
+  Cache-Control: public, max-age=0, s-maxage=86400, stale-while-revalidate=604800

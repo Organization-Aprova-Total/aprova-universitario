@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #040404;
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--background); color: var(--foreground); font-family: var(--font-noto-sans), system-ui, sans-serif; }
+
+/* Botão flutuante global de WhatsApp (as LPs podem esconder por CSS). */
+.whatsapp-float { position: fixed; right: 16px; bottom: 16px; z-index: 40; width: 56px; height: 56px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; box-shadow: 0 8px 24px rgba(0, 0, 0, .35); }
